@@ -53,7 +53,7 @@ const SkillCard = ({ title, skills }: { title: string, skills: string[] }) => {
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="bg-[#f9f6f0] py-20">
+    <section id="skills" className="bg-background py-20">
       <div className="container-custom">
         <h3 className="section-subtitle">MY EXPERTISE</h3>
         <h2 className="section-title mb-12">SKILLS</h2>
