@@ -13,9 +13,9 @@ const HeroSection = () => {
           <div className="animate-fade-in-up">
             <p className="text-blue font-medium mb-2">HELLO, I AM</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gradient">EBENEZER EDEM ZUH</h1>
-            <h2 className="text-xl text-blue font-medium mb-4">Junior Web Developer & Data Analyst</h2>
+            <h2 className="text-xl text-blue font-medium mb-4">Web Developer</h2>
             <p className="text-gray-600 mb-6 max-w-lg">
-              Passionate about web development, Python programming, and data analytics. I enjoy building responsive web applications and automating systems to improve user experience and performance.
+              Passionate about creating responsive, interactive web experiences. I specialize in building user-friendly web applications with clean code and modern design principles.
             </p>
             <Button onClick={scrollToContact} className="btn-primary">
               Contact
@@ -36,11 +36,11 @@ const HeroSection = () => {
         <div className="mt-16 md:mt-24 grid grid-cols-2 gap-4">
           <div className="bg-white rounded-lg p-4 shadow-md text-center">
             <h3 className="font-bold text-2xl md:text-3xl text-blue">3+</h3>
-            <p className="text-gray-600 text-sm md:text-base">Projects</p>
+            <p className="text-gray-600 text-sm md:text-base">Web Projects</p>
           </div>
           <div className="bg-white rounded-lg p-4 shadow-md text-center">
-            <h3 className="font-bold text-2xl md:text-3xl text-blue">8+</h3>
-            <p className="text-gray-600 text-sm md:text-base">Technical Skills</p>
+            <h3 className="font-bold text-2xl md:text-3xl text-blue">12+</h3>
+            <p className="text-gray-600 text-sm md:text-base">Web Development Skills</p>
           </div>
         </div>
       </div>

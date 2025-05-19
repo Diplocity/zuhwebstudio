@@ -9,10 +9,10 @@ const ContactSection = () => {
         <h3 className="section-subtitle">GET IN TOUCH</h3>
         <h2 className="section-title mb-4">CONTACT</h2>
         <p className="text-center text-gray-600 mb-12 max-w-xl mx-auto">
-          Are you looking for a web developer with data analytics skills? I'd be happy to connect!
+          Looking for a web developer to bring your project to life? I specialize in responsive, user-friendly web applications. Let's connect!
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Card className="text-center hover:shadow-lg transition-all">
             <CardContent className="pt-6">
               <div className="mb-4 mx-auto bg-blue/10 h-16 w-16 rounded-full flex items-center justify-center">
@@ -87,33 +87,20 @@ const ContactSection = () => {
                     LinkedIn
                   </a>
                 </Button>
-                <Button asChild variant="outline" className="w-full border-blue text-blue hover:bg-blue hover:text-white">
-                  <a 
-                    href="https://ebenezer-portfolio.streamlit.app/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    Portfolio
-                  </a>
-                </Button>
               </div>
             </CardContent>
           </Card>
           
           <div className="bg-gradient-to-br from-blue to-blue-light rounded-lg text-white p-8 flex flex-col justify-center">
-            <h3 className="text-2xl font-bold mb-4">Let's Work Together!</h3>
-            <p className="mb-6">I'm currently open to new opportunities and collaborations. Feel free to reach out if you have a project in mind or just want to connect.</p>
+            <h3 className="text-2xl font-bold mb-4">Ready to Build Your Web Presence?</h3>
+            <p className="mb-6">I specialize in creating responsive, user-friendly web applications that deliver exceptional user experiences. Let's bring your vision to life!</p>
             <div className="flex justify-center">
               <Button asChild className="bg-white text-blue hover:bg-opacity-90">
                 <a href="mailto:ebenezuh@gmail.com" className="flex items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  Send me an email
+                  Start a project
                 </a>
               </Button>
             </div>
