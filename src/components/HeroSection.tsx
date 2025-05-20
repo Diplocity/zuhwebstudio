@@ -1,15 +1,13 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-
 const HeroSection = () => {
   const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('contact')?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <section id="home" className="pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
+  return <section id="home" className="pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
       <div className="container-custom relative">
         {/* Background elements */}
         <div className="absolute top-0 right-0 w-72 h-72 bg-blue/5 rounded-full filter blur-3xl -z-10"></div>
@@ -51,7 +49,7 @@ const HeroSection = () => {
                     <div className="relative">
                       <div className="bg-blue/10 rounded-full h-40 w-40 flex items-center justify-center animate-pulse">
                         <Avatar className="h-36 w-36 border-4 border-white shadow-xl">
-                          <AvatarImage src="https://i.postimg.cc/sXqLv7Rb/TBU2.jpg" alt="Ebenezer Edem Zuh" />
+                          <AvatarImage src="https://i.postimg.cc/sXqLv7Rb/TBU2.jpg" alt="Ebenezer Edem Zuh" className="object-fill" />
                           <AvatarFallback className="text-6xl font-bold text-blue">EZ</AvatarFallback>
                         </Avatar>
                       </div>
@@ -100,8 +98,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
