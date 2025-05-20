@@ -64,9 +64,9 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				blue: {
-					light: '#6EA8FE',
-					DEFAULT: '#4A89DC',
-					dark: '#3A6CB3'
+					light: '#5A96E3',  // Deeper blue light
+					DEFAULT: '#3670C7', // Deeper blue
+					dark: '#2A5798'    // Deeper blue dark
 				},
 			},
 			fontFamily: {
