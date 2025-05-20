@@ -1,6 +1,7 @@
 
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -49,9 +50,10 @@ const HeroSection = () => {
                   <div className="flex items-center justify-center mb-6">
                     <div className="relative">
                       <div className="bg-blue/10 rounded-full h-40 w-40 flex items-center justify-center animate-pulse">
-                        <div className="bg-white rounded-full h-36 w-36 flex items-center justify-center shadow-inner">
-                          <div className="text-6xl font-bold text-blue">EZ</div>
-                        </div>
+                        <Avatar className="h-36 w-36 border-4 border-white shadow-xl">
+                          <AvatarImage src="https://i.postimg.cc/sXqLv7Rb/TBU2.jpg" alt="Ebenezer Edem Zuh" />
+                          <AvatarFallback className="text-6xl font-bold text-blue">EZ</AvatarFallback>
+                        </Avatar>
                       </div>
                       <div className="absolute -bottom-2 -right-2 bg-blue text-white rounded-full h-10 w-10 flex items-center justify-center shadow-lg">
                         <span className="text-xl">✓</span>
