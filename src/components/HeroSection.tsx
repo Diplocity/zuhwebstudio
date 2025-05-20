@@ -1,12 +1,21 @@
+
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+
 const HeroSection = () => {
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({
       behavior: 'smooth'
     });
   };
+
+  const scrollToSkills = () => {
+    document.getElementById('skills')?.scrollIntoView({
+      behavior: 'smooth'
+    });
+  };
+
   return <section id="home" className="pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
       <div className="container-custom relative">
         {/* Background elements */}
@@ -30,7 +39,7 @@ const HeroSection = () => {
                 Let's Talk 
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
-              <Button variant="outline" className="border-blue/40 hover:bg-blue/5 text-foreground">
+              <Button onClick={scrollToSkills} variant="outline" className="border-blue/40 hover:bg-blue/5 text-foreground">
                 View Skills
               </Button>
             </div>
@@ -47,8 +56,8 @@ const HeroSection = () => {
                 <div className="bg-white dark:bg-gray-900 rounded-xl p-8 backdrop-blur-sm">
                   <div className="flex items-center justify-center mb-6">
                     <div className="relative">
-                      <div className="bg-blue/10 rounded-full h-40 w-40 flex items-center justify-center animate-pulse">
-                        <Avatar className="h-36 w-36 border-4 border-white shadow-xl">
+                      <div className="bg-blue/10 rounded-full h-48 w-48 flex items-center justify-center animate-[pulse_4s_ease-in-out_infinite]">
+                        <Avatar className="h-44 w-44 border-4 border-white shadow-xl">
                           <AvatarImage src="https://i.postimg.cc/sXqLv7Rb/TBU2.jpg" alt="Ebenezer Edem Zuh" className="object-fill" />
                           <AvatarFallback className="text-6xl font-bold text-blue">EZ</AvatarFallback>
                         </Avatar>
