@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
@@ -54,7 +55,7 @@ const HeroSection = () => {
               <div className="absolute -left-6 -top-6 text-7xl text-blue/10 font-bold">{`{`}</div>
               <div className="absolute -right-6 -bottom-6 text-7xl text-blue/10 font-bold">{`}`}</div>
               
-              {/* Main profile element with improved animations - reduced size to a more reasonable 48px */}
+              {/* Main profile element with improved animations - original size before changes */}
               <div className="bg-gradient-to-br from-blue/80 to-blue-light/80 rounded-2xl p-1 shadow-lg hover:shadow-blue/20 hover:shadow-xl transition-shadow">
                 <div className="bg-white dark:bg-gray-900 rounded-xl p-8 backdrop-blur-sm">
                   <div className="flex items-center justify-center mb-6">
