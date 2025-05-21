@@ -1,20 +1,17 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-
 const HeroSection = () => {
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({
       behavior: 'smooth'
     });
   };
-
   const scrollToSkills = () => {
     document.getElementById('skills')?.scrollIntoView({
       behavior: 'smooth'
     });
   };
-
   return <section id="home" className="pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
       <div className="container-custom relative">
         {/* Enhanced background elements */}
@@ -62,7 +59,7 @@ const HeroSection = () => {
                       {/* Keeping extended visibility when clear (22s total animation: 20s clear, 2s blurred) */}
                       <div className="bg-blue/10 rounded-full h-96 w-96 flex items-center justify-center animate-[pulse_22s_cubic-bezier(0.4,0,0.6,1)_infinite]">
                         <Avatar className="h-88 w-88 border-4 border-white shadow-xl">
-                          <AvatarImage src="https://i.postimg.cc/sXqLv7Rb/TBU2.jpg" alt="Ebenezer Edem Zuh" className="object-cover" />
+                          <AvatarImage src="https://i.postimg.cc/sXqLv7Rb/TBU2.jpg" alt="Ebenezer Edem Zuh" className="object-scale-down" />
                           <AvatarFallback className="text-6xl font-bold text-blue">EZ</AvatarFallback>
                         </Avatar>
                       </div>
