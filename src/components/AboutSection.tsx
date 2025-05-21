@@ -1,7 +1,5 @@
-
 const AboutSection = () => {
-  return (
-    <section id="about" className="bg-gray-50 py-20">
+  return <section id="about" className="bg-gray-50 py-20">
       <div className="container-custom">
         <h3 className="section-subtitle">ABOUT ME</h3>
         <h2 className="section-title mb-12">Who I Am</h2>
@@ -10,9 +8,7 @@ const AboutSection = () => {
           <div className="space-y-6 animate-fade-in-up">
             <div className="bg-white p-6 rounded-xl shadow-md">
               <h3 className="text-xl font-semibold text-blue mb-2">Background</h3>
-              <p className="text-gray-700">
-                Based in Düsseldorf, Germany, I'm a junior web developer and data analyst focusing on creating responsive web applications and analyzing data to drive decision-making processes.
-              </p>
+              <p className="text-gray-700">Based in Düsseldorf, Germany, I'm a web developer and data analyst focusing on creating responsive web applications and analyzing data to drive decision-making processes.</p>
             </div>
             
             <div className="bg-white p-6 rounded-xl shadow-md">
@@ -85,8 +81,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
