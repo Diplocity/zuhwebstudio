@@ -8,7 +8,7 @@ const AboutSection = () => {
           <div className="space-y-6 animate-fade-in-up">
             <div className="bg-white p-6 rounded-xl shadow-md">
               <h3 className="text-xl font-semibold text-blue mb-2">Background</h3>
-              <p className="text-gray-700">Based in Düsseldorf, Germany, I'm a web developer and data analyst focusing on creating responsive web applications and analyzing data to drive decision-making processes.</p>
+              <p className="text-gray-700">Based in Düsseldorf Germany, I'm a web developer and data analyst focusing on creating responsive web applications and analyzing data to drive decision-making processes.</p>
             </div>
             
             <div className="bg-white p-6 rounded-xl shadow-md">
