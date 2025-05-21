@@ -60,9 +60,9 @@ const HeroSection = () => {
                 <div className="bg-white dark:bg-gray-900 rounded-xl p-8 backdrop-blur-sm">
                   <div className="flex items-center justify-center mb-6">
                     <div className="relative">
-                      {/* Extended visibility when clear (8s total animation: 6s clear, 2s blurred) */}
-                      <div className="bg-blue/10 rounded-full h-56 w-56 flex items-center justify-center animate-[pulse_8s_cubic-bezier(0.4,0,0.6,1)_infinite]">
-                        <Avatar className="h-52 w-52 border-4 border-white shadow-xl">
+                      {/* Extended visibility when clear (12s total animation: 10s clear, 2s blurred) */}
+                      <div className="bg-blue/10 rounded-full h-64 w-64 flex items-center justify-center animate-[pulse_12s_cubic-bezier(0.4,0,0.6,1)_infinite]">
+                        <Avatar className="h-60 w-60 border-4 border-white shadow-xl">
                           <AvatarImage src="https://i.postimg.cc/sXqLv7Rb/TBU2.jpg" alt="Ebenezer Edem Zuh" className="object-cover" />
                           <AvatarFallback className="text-6xl font-bold text-blue">EZ</AvatarFallback>
                         </Avatar>

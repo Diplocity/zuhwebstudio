@@ -5,11 +5,11 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const projects = [
   {
-    title: "CraftDigits Demo",
-    description: "Responsive business website demo showcasing modern web design principles and UX practices.",
+    title: "Loveleader NGO Website",
+    description: "Modern responsive website for an NGO focused on community outreach and volunteer engagement, featuring donation systems and event management.",
     link: "http://demo.craftdigits.com/",
-    tags: ["HTML", "CSS", "Responsive Design"],
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    tags: ["React", "Tailwind CSS", "Web Development"],
+    image: "https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   },
   {
     title: "Movie Explorer",
