@@ -5,7 +5,8 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 const PricingSection = () => {
   const handleDownload = () => {
-    window.open("https://drive.google.com/file/d/1RT2Bx8-nTM92A7VDy3Bpm7rAaRSKwssP/view?usp=drive_link", "_blank");
+    // Updated to use JPG file format as provided by the user
+    window.open("/pricing-plans.jpg", "_blank");
   };
 
   return (
@@ -19,7 +20,7 @@ const PricingSection = () => {
 
         <Card className="max-w-3xl mx-auto border-blue/20 animate-fade-in-up bg-white/80 backdrop-blur-sm">
           <div className="absolute top-0 right-0 -mt-4 -mr-4 bg-blue text-white rounded-full h-16 w-16 flex items-center justify-center transform rotate-12 shadow-lg">
-            <span className="font-bold text-sm">PDF</span>
+            <span className="font-bold text-sm">JPG</span>
           </div>
 
           <CardHeader className="text-center">
@@ -69,7 +70,7 @@ const PricingSection = () => {
                   <path d="m9 12 2 2 4-4" />
                   <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z" />
                 </svg>
-                What's included in the pricing PDF:
+                What's included in the pricing image:
               </h4>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
                 <li className="flex items-center">

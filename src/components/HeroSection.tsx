@@ -1,17 +1,21 @@
+
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+
 const HeroSection = () => {
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({
       behavior: 'smooth'
     });
   };
+  
   const scrollToSkills = () => {
     document.getElementById('skills')?.scrollIntoView({
       behavior: 'smooth'
     });
   };
+  
   return <section id="home" className="pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
       <div className="container-custom relative">
         {/* Enhanced background elements */}
@@ -51,14 +55,14 @@ const HeroSection = () => {
               <div className="absolute -left-6 -top-6 text-7xl text-blue/10 font-bold">{`{`}</div>
               <div className="absolute -right-6 -bottom-6 text-7xl text-blue/10 font-bold">{`}`}</div>
               
-              {/* Main profile element with doubled size */}
+              {/* Profile element with adjusted size to match reference image */}
               <div className="bg-gradient-to-br from-blue/80 to-blue-light/80 rounded-2xl p-1 shadow-lg hover:shadow-blue/20 hover:shadow-xl transition-shadow">
                 <div className="bg-white dark:bg-gray-900 rounded-xl p-8 backdrop-blur-sm">
                   <div className="flex items-center justify-center mb-6">
                     <div className="relative">
-                      {/* Keeping extended visibility when clear (22s total animation: 20s clear, 2s blurred) */}
-                      <div className="bg-blue/10 rounded-full h-96 w-96 flex items-center justify-center animate-[pulse_22s_cubic-bezier(0.4,0,0.6,1)_infinite]">
-                        <Avatar className="h-88 w-88 border-4 border-white shadow-xl">
+                      {/* Adjusted size to be similar to the reference image */}
+                      <div className="bg-blue/10 rounded-full h-72 w-72 flex items-center justify-center animate-[pulse_22s_cubic-bezier(0.4,0,0.6,1)_infinite]">
+                        <Avatar className="h-64 w-64 border-4 border-white shadow-xl">
                           <AvatarImage src="https://i.postimg.cc/sXqLv7Rb/TBU2.jpg" alt="Ebenezer Edem Zuh" className="object-cover" />
                           <AvatarFallback className="text-6xl font-bold text-blue">EZ</AvatarFallback>
                         </Avatar>
@@ -118,4 +122,5 @@ const HeroSection = () => {
       </div>
     </section>;
 };
+
 export default HeroSection;
