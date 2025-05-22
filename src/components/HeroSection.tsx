@@ -64,7 +64,7 @@ const HeroSection = () => {
                       {/* Updated animation timing to 35 seconds total (30 sec clear, 5 sec blurred) */}
                       <div className="bg-blue/10 rounded-full h-56 w-56 md:h-72 md:w-72 flex items-center justify-center animate-[pulse_35s_cubic-bezier(0.4,0,0.6,1)_infinite]">
                         <Avatar className="h-48 w-48 md:h-64 md:w-64 border-4 border-white shadow-xl">
-                          <AvatarImage src="https://i.postimg.cc/Hxx59Tnr/gu.jpg" alt="Ebenezer Edem Zuh" className="object-cover" />
+                          <AvatarImage src="https://i.postimg.cc/qBmL6Zmb/TBU2.jpg" alt="Ebenezer Edem Zuh" className="object-cover" />
                           <AvatarFallback className="text-4xl md:text-6xl font-bold text-blue">EZ</AvatarFallback>
                         </Avatar>
                       </div>
