@@ -49,22 +49,23 @@ const HeroSection = () => {
             </div>
           </div>
           
-          <div className="hidden md:block relative z-10">
+          {/* Profile section - Now visible on mobile */}
+          <div className="block relative z-10 mx-auto md:mx-0 max-w-xs md:max-w-none">
             <div className="relative">
               {/* Code brackets decorative element */}
               <div className="absolute -left-6 -top-6 text-7xl text-blue/10 font-bold">{`{`}</div>
               <div className="absolute -right-6 -bottom-6 text-7xl text-blue/10 font-bold">{`}`}</div>
               
-              {/* Profile element with adjusted size to match reference image */}
+              {/* Profile element with responsive sizing */}
               <div className="bg-gradient-to-br from-blue/80 to-blue-light/80 rounded-2xl p-1 shadow-lg hover:shadow-blue/20 hover:shadow-xl transition-shadow">
-                <div className="bg-white dark:bg-gray-900 rounded-xl p-8 backdrop-blur-sm">
+                <div className="bg-white dark:bg-gray-900 rounded-xl p-6 md:p-8 backdrop-blur-sm">
                   <div className="flex items-center justify-center mb-6">
                     <div className="relative">
-                      {/* Adjusted size to be similar to the reference image */}
-                      <div className="bg-blue/10 rounded-full h-72 w-72 flex items-center justify-center animate-[pulse_22s_cubic-bezier(0.4,0,0.6,1)_infinite]">
-                        <Avatar className="h-64 w-64 border-4 border-white shadow-xl">
-                          <AvatarImage src="https://i.postimg.cc/sXqLv7Rb/TBU2.jpg" alt="Ebenezer Edem Zuh" className="object-cover" />
-                          <AvatarFallback className="text-6xl font-bold text-blue">EZ</AvatarFallback>
+                      {/* Responsive size container */}
+                      <div className="bg-blue/10 rounded-full h-56 w-56 md:h-72 md:w-72 flex items-center justify-center animate-[pulse_22s_cubic-bezier(0.4,0,0.6,1)_infinite]">
+                        <Avatar className="h-48 w-48 md:h-64 md:w-64 border-4 border-white shadow-xl">
+                          <AvatarImage src="https://i.postimg.cc/Hxx59Tnr/gu.jpg" alt="Ebenezer Edem Zuh" className="object-cover" />
+                          <AvatarFallback className="text-4xl md:text-6xl font-bold text-blue">EZ</AvatarFallback>
                         </Avatar>
                       </div>
                       <div className="absolute -bottom-2 -right-2 bg-blue text-white rounded-full h-10 w-10 flex items-center justify-center shadow-lg">
@@ -91,7 +92,7 @@ const HeroSection = () => {
               </div>
             </div>
             
-            {/* New floating tech icons */}
+            {/* Floating tech icons */}
             <div className="absolute -right-8 top-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-2 rounded-full shadow-md animate-bounce">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue"><path d="M12 2H2v10h10V2z"></path><path d="M17 17v5"></path><path d="M9 12h5a3 3 0 0 1 3 3v5"></path><path d="M9 20h5"></path><path d="M9 16h5"></path><path d="M22 2 12 12"></path></svg>
             </div>

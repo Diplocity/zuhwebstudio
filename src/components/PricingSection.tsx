@@ -5,8 +5,8 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 const PricingSection = () => {
   const handleDownload = () => {
-    // Updated to use JPG file format as provided by the user
-    window.open("/pricing-plans.jpg", "_blank");
+    // Updated to use the direct JPG URL provided by the user
+    window.open("https://i.postimg.cc/CKvJgPff/zuh-pricing-recreated-page-0001.jpg", "_blank");
   };
 
   return (
