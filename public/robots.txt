@@ -12,3 +12,4 @@ Allow: /
 
 User-agent: *
 Allow: /
+Sitemap: https://zuhwebstudio.onrender.com/sitemap.xml
