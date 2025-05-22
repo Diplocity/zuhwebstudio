@@ -49,20 +49,20 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Profile section - Now visible on mobile */}
+          {/* Profile section */}
           <div className="block relative z-10 mx-auto md:mx-0 max-w-xs md:max-w-none">
             <div className="relative">
               {/* Code brackets decorative element */}
               <div className="absolute -left-6 -top-6 text-7xl text-blue/10 font-bold">{`{`}</div>
               <div className="absolute -right-6 -bottom-6 text-7xl text-blue/10 font-bold">{`}`}</div>
               
-              {/* Profile element with responsive sizing */}
+              {/* Profile element with responsive sizing and updated animation timing */}
               <div className="bg-gradient-to-br from-blue/80 to-blue-light/80 rounded-2xl p-1 shadow-lg hover:shadow-blue/20 hover:shadow-xl transition-shadow">
                 <div className="bg-white dark:bg-gray-900 rounded-xl p-6 md:p-8 backdrop-blur-sm">
                   <div className="flex items-center justify-center mb-6">
                     <div className="relative">
-                      {/* Responsive size container */}
-                      <div className="bg-blue/10 rounded-full h-56 w-56 md:h-72 md:w-72 flex items-center justify-center animate-[pulse_22s_cubic-bezier(0.4,0,0.6,1)_infinite]">
+                      {/* Updated animation timing to 35 seconds total (30 sec clear, 5 sec blurred) */}
+                      <div className="bg-blue/10 rounded-full h-56 w-56 md:h-72 md:w-72 flex items-center justify-center animate-[pulse_35s_cubic-bezier(0.4,0,0.6,1)_infinite]">
                         <Avatar className="h-48 w-48 md:h-64 md:w-64 border-4 border-white shadow-xl">
                           <AvatarImage src="https://i.postimg.cc/Hxx59Tnr/gu.jpg" alt="Ebenezer Edem Zuh" className="object-cover" />
                           <AvatarFallback className="text-4xl md:text-6xl font-bold text-blue">EZ</AvatarFallback>

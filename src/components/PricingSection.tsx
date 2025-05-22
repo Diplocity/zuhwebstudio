@@ -5,8 +5,14 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 const PricingSection = () => {
   const handleDownload = () => {
-    // Updated to use the direct JPG URL provided by the user
-    window.open("https://i.postimg.cc/CKvJgPff/zuh-pricing-recreated-page-0001.jpg", "_blank");
+    // Create an anchor element and set attributes for direct download
+    const link = document.createElement('a');
+    link.href = "https://i.postimg.cc/CKvJgPff/zuh-pricing-recreated-page-0001.jpg";
+    link.download = "pricing-packages.jpg"; // Suggested filename for download
+    link.setAttribute('target', '_blank');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
